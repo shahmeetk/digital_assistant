@@ -1,0 +1,72 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "help desk",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "AMAZON.HelpIntent Hi"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "AMAZON.StopIntent Thank you for help",
+                        "AMAZON.StopIntent Thank you"
+                    ]
+                },
+                {
+                    "name": "VisitorNameIsIntent",
+                    "slots": [
+                        {
+                            "name": "Visitor",
+                            "type": "LIST_OF_COLORS"
+                        }
+                    ],
+                    "samples": [
+                        "VisitorNameIsIntent my name is {Visitor}"
+                    ]
+                },
+                {
+                    "name": "EmpNameIsIntent",
+                    "slots": [
+                        {
+                            "name": "Emp",
+                            "type": "LIST_OF_COLORS"
+                        }
+                    ],
+                    "samples": [
+                        "EmpNameIsIntent i want to meet {Emp}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_COLORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "pratik"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maulin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deepak"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
